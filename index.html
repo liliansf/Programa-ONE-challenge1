@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    
+<main class="main">
+    <header>
+       <img src="./images/alura-logo.svg" alt="Logo da alura"> 
+    </header>
+    <section> 
+        <textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto"></textarea>
+            <!-- informação/ instrução para uso -->
+    <div class="info">
+        <img src="./images/icone_de_exclamacao.svg" alt="Ponto de Exclamação" /> 
+        <p>Apenas letras minúsculas sem acento.</p>
+    </div>
+    <div class="botoes">
+        <button type="button" onclick="btnEncriptar()">Criptografar</button>
+        <button type="button" onclick="btnDescriptar()">Descriptografar</button>
+    </div>
+    </section>
+    <section class="campomensagem">
+        <textarea class="mensagem"></textarea>
+        <div class="hiddenmsg"> 
+            <h3>Nenhuma mensagem encontrada</h3>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <div class="msgBotoes"> 
+            <button type="button" onclick="Copy()" class="copyBtn">Copiar</button>
+            <button type="button" onclick="goBack()" class="backBtn">Limpar</button>
+        </div> 
+    </section>
+</main>
+<footer>
+    <p>Copyright © 2022 - by <a href="https://github.com/liliansf" target="_blank">Lilian Faria</a>.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
